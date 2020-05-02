@@ -56,7 +56,7 @@ Pyxel est open source et gratuit. Lancez vous dans la programmation retro gaming
 
 ### Windows
 
-Premièrement il faut installer [Python3](https://www.python.org/) (version 3.6.9 ou +).
+En premier lieu installez [Python3](https://www.python.org/) (version 3.6.9 ou supérieure).
 
 Lorsque vous installez Python, cochez la case **add Python to PATH**, comme ci-dessous:
 
@@ -85,6 +85,7 @@ pip3 install -U pyxel
 ### Linux
 
 Install [Python3](https://www.python.org/) (version 3.6.9 or higher) and the required packages in a way appropriate for each distribution.
+Installez [Python3] (https://www.python.org/) (version 3.6.9 ou supérieure) et les packages requis pour votre distribution Linux.
 
 **Ubuntu:**
 
@@ -93,17 +94,17 @@ sudo apt install python3 python3-pip libsdl2-dev libsdl2-image-dev
 sudo -H pip3 install -U pyxel
 ```
 
-### Other environment
+### Autre environements
 
-To install Pyxel in an environment other than the above (32-bit Linux, Raspberry PI, etc.), follow the steps below for building:
+Pour installer Pyxel dans un environnement autre que ceux ci-dessus (Linux 32 bits, Raspberry PI, etc.), suivez les étapes ci-dessous pour la compilation de Pyxel:
 
-#### Install necessary tools and packages
+#### Installer les outils et packages nécessaires
 
-- C++ build toolchain (should include gcc and make command)
-- libsdl2-dev and libsdl2-image-dev
-- [Python3](https://www.python.org/) (version 3.6.9 or highter) and pip command
+- C++ build toolchain (doit inclure le compileur gcc et l'utilitaire make)
+- libsdl2-dev et libsdl2-image-dev
+- [Python3](https://www.python.org/) (version 3.6.9 or supérieure) et l'installateur de paquet 'pip'
 
-#### Execute the following command in any folder
+#### Executez les commandes suivante depuis n'importe quel dossier
 
 ```sh
 git clone https://github.com/kitao/pyxel.git
@@ -112,26 +113,27 @@ make -C pyxel/core clean all
 pip3 install .
 ```
 
-### Install examples
+### Installation des exemples
 
-After installing Pyxel, the examples of Pyxel will be copied to the current directory with the following command:
+Suite à l'installation de Pyxel, les exemples de Pyxel peuvent être installés dans le répertoire courant à l'aide de la ligne de commande suivant:
 
 ```sh
 install_pyxel_examples
 ```
 
-The examples to be copied are as follows:
+Les exemples sont les suivant:
 
-- [01_hello_pyxel.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/01_hello_pyxel.py) - Simplest application
-- [02_jump_game.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/02_jump_game.py) - Jump game with Pyxel resource file
-- [03_draw_api.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/03_draw_api.py) - Demonstration of drawing API
-- [04_sound_api.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/04_sound_api.py) - Demonstration of sound API
-- [05_color_palette.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/05_color_palette.py) - Color palette list
-- [06_click_game.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/06_click_game.py) - Mouse click game
-- [07_snake.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/07_snake.py) - Snake game with BGM
-- [08_triangle_api.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/08_triangle_api.py) - Demonstration of triangle drawing API
+- [01_hello_pyxel.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/01_hello_pyxel.py) - application Pyxel minimale
+- [02_jump_game.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/02_jump_game.py) - jeu de plateforme avec un fichier resource Pyxel
+- [03_draw_api.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/03_draw_api.py) - Demonstration de l'interface graphique
+- [04_sound_api.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/04_sound_api.py) - Demonstration de l'interface sonore
+- [05_color_palette.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/05_color_palette.py) - liste de la palette de couleur
+- [06_click_game.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/06_click_game.py) - Un simple clicker
+- [07_snake.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/07_snake.py) - Un simple Snake avec de la musique
+- [08_triangle_api.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/08_triangle_api.py) - Exemple de dessin de triangles
 
 The examples can be executed like normal Python code:
+Les exemples peuvent être executés comme n'importe quel programme Python:
 
 **Windows:**
 
@@ -147,11 +149,11 @@ cd pyxel_examples
 python3 01_hello_pyxel.py
 ```
 
-## How to Use
+## Comment utiliser Pyxel?
 
-### Create a Pyxel Application
+### Créer une application Pyxel
 
-After importing the Pyxel module in your python code, specify the window size with `init` function first, then starts the Pyxel application with `run` function.
+Après avoir importé le module Pyxel dans votre code python, spécifiez d'abord la taille de la fenêtre avec la fonction `init`, La fonction `run` lancera le déroulement du programme.
 
 ```python
 import pyxel
@@ -168,10 +170,11 @@ def draw():
 
 pyxel.run(update, draw)
 ```
+Les arguments de la fonction `run` sont:
+-La fonction `update` qui met à jour chaque image (frame).
+-la fonction `draw` pour dessiner l'écran si nécessaire.
 
-The arguments of `run` function are `update` function to update each frame and `draw` function to draw screen when necessary.
-
-In an actual application, it is recommended to wrap pyxel code in a class as below:
+Dans Votre application, il est recommandé d'envelopper le code pyxel dans une classe comme ci-dessous:
 
 ```python
 import pyxel
@@ -191,10 +194,9 @@ class App:
 
 App()
 ```
+il est aussi possble d'utiliser les fonctions `show` et `flip` pour dessiner de simple graphiques et/ou animations.
 
-It is also possible to write simple code using `show` and `flip` functions to draw simple graphics and animations.
-
-The `show` function displays the screen and waits until the `ESC` key is pressed.
+La fonction `show` affiche l'écran et attends jusqu'à ce que la touche `ESC` soit pressée.
 
 ```python
 import pyxel
@@ -205,7 +207,7 @@ pyxel.circb(60, 60, 40, 7)
 pyxel.show()
 ```
 
-The `flip` function updates the screen once.
+La fonction `flip` met à jour l'affichage à son execution.
 
 ```python
 import pyxel
@@ -218,16 +220,16 @@ while True:
     pyxel.flip()
 ```
 
-### Special Controls
+### Commandes spéciales
 
-The following special controls can be performed while a Pyxel application is running:
+Les Commandes spéciales suivantes peuvent êtres utilisées pendant l'exécution d'une application Pyxel:
 
 - `Esc`<br>
-Quit the application
+Quitter l'application
 - `Alt(Option)+1`<br>
-Save the screenshot to the desktop
+Sauvegarder une capture d'écran sur le bureau
 - `Alt(Option)+2`<br>
-Reset the recording start time of the screen capture video
+Reset the recording start time of the screen capture videos
 - `Alt(Option)+3`<br>
 Save the screen capture video (gif) to the desktop (up to 30 seconds)
 - `Alt(Option)+0`<br>
