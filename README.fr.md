@@ -4,8 +4,7 @@
 
 **Pyxel** est un moteur de jeu retro gaming pour Python.
 
-Thanks to its simple specifications inspired by retro gaming consoles, such as only 16 colors can be displayed and only 4 sounds can be played back at the same time, you can feel free to enjoy making pixel art style games.
-Grâce à ses spécifications simples inspirées des consoles de jeux rétro, telles que ses 16 couleurs d'affichage et 4 sons peuvent être joués même temps, vous pouvez vous sentir libre de profiter de la création de jeux de style pixel art.
+Grâce à ses spécifications simples inspirées des consoles de jeux rétro, telles que ses 16 couleurs d'affichage et ses 4 cannaux sonores, vous êtes libre de créer vos propres jeux "pixel art".
 <a href="https://github.com/kitao/pyxel/blob/master/pyxel/examples/01_hello_pyxel.py" target="_blank">
 <img src="https://raw.githubusercontent.com/kitao/pyxel/master/pyxel/examples/screenshots/01_hello_pyxel.gif" width="48%">
 </a>
@@ -30,39 +29,39 @@ Grâce à ses spécifications simples inspirées des consoles de jeux rétro, te
 <img src="https://raw.githubusercontent.com/kitao/pyxel/master/pyxel/editor/screenshots/sound_music_editor.gif" width="48%">
 </a>
 
-The specifications of the gaming console and APIs for Pyxel are referring to awesome [PICO-8](https://www.lexaloffle.com/pico-8.php) and [TIC-80](https://tic.computer/).
+L'interface de programmation de Pyxel fait référence aux célèbres [PICO-8](https://www.lexaloffle.com/pico-8.php) et [TIC-80](https://tic.computer/).
 
-Pyxel is open source and free to use. Let's start making a retro game with Pyxel!
+Pyxel est open source et gratuit. Lancez vous dans la programmation retro gaming avec Pyxel!
 
-## Specifications
+## Caractéristiques
 
-- Run on Windows, Mac, and Linux
-- Code writing with Python3
-- Fixed 16 color palette
-- 256x256 sized 3 image banks
-- 256x256 sized 8 tilemaps
-- 4 channels with 64 definable sounds
-- 8 musics which can combine arbitrary sounds
-- Keyboard, mouse, and gamepad inputs
-- Image and sound editor
+- Fonctionne sous Windows, Mac et Linux
+- Programmation avec Python3
+- Palette de 16 couleurs fixe
+- Banque de 3 images de 256x256 pixels
+- 8 tilemaps de taille 256x256 pixels
+- 4 canaux avec 64 sons définissables
+- 8 musiques qui peuvent combiner des sons aléatoires **need information**
+- Gestion clavier, souris et manette de jeu
+- Éditeur d'images et de sons
 
-### Color Palette
+### Palette de couleurs
 
 <img src="https://raw.githubusercontent.com/kitao/pyxel/master/pyxel/examples/screenshots/05_color_palette.png">
 <br><br>
 <img src="https://raw.githubusercontent.com/kitao/pyxel/master/images/pyxel_palette.png">
 
-## How to Install
+## Installation
 
 ### Windows
 
-First, install [Python3](https://www.python.org/) (version 3.6.9 or higher).
+Premièrement il faut installer [Python3](https://www.python.org/) (version 3.6.9 ou +).
 
-When you install Python with the official installer, **add Python to PATH** by checking the button below:
+Lorsque vous installez Python, cochez la case **add Python to PATH**, comme ci-dessous:
 
 <img src="https://raw.githubusercontent.com/kitao/pyxel/master/images/python_installer.png">
 
-Next, install Pyxel with the following `pip` command from the command prompt:
+Ensuite installez Pyxel avec 'pip' depuis une ligne de commande (CMD):
 
 ```sh
 pip install -U pyxel
@@ -70,13 +69,13 @@ pip install -U pyxel
 
 ### Mac
 
-First, in the environment where [Homebrew](https://brew.sh/) package manager is installed, install [Python3](https://www.python.org/) (version 3.6.9 or higher) and [SDL2](https://www.libsdl.org/) with the following command:
+Tout d'abord, dans l'environnement où le gestionnaire de packages [Homebrew](https://brew.sh/) est installé, installez [Python3](https://www.python.org/) (version 3.6.9 ou supérieure) et [SDL2](https://www.libsdl.org/) avec la commande suivante:
 
 ```sh
 brew install python3 sdl2 sdl2_image
 ```
 
-Next, **restart the terminal** and install Pyxel with the `pip3` command:
+Ensuite, redémarrez le terminal et installez Pyxel avec la commande 'pip3':
 
 ```sh
 pip3 install -U pyxel
