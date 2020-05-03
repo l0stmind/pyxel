@@ -132,7 +132,6 @@ Les exemples sont les suivant:
 - [07_snake.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/07_snake.py) - Un simple Snake avec de la musique
 - [08_triangle_api.py](https://github.com/kitao/pyxel/blob/master/pyxel/examples/08_triangle_api.py) - Exemple de dessin de triangles
 
-The examples can be executed like normal Python code:
 Les exemples peuvent être executés comme n'importe quel programme Python:
 
 **Windows:**
@@ -194,7 +193,7 @@ class App:
 
 App()
 ```
-il est aussi possble d'utiliser les fonctions `show` et `flip` pour dessiner de simple graphiques et/ou animations.
+Il est aussi possible d'utiliser les fonctions `show` et `flip` pour dessiner de simple graphiques et/ou animations.
 
 La fonction `show` affiche l'écran et attends jusqu'à ce que la touche `ESC` soit pressée.
 
@@ -229,26 +228,27 @@ Quitter l'application
 - `Alt(Option)+1`<br>
 Sauvegarder une capture d'écran sur le bureau
 - `Alt(Option)+2`<br>
-Reset the recording start time of the screen capture videos
+Initialise le point de départ d'une capture de l'écran en format GIF
 - `Alt(Option)+3`<br>
-Save the screen capture video (gif) to the desktop (up to 30 seconds)
+Sauvegarde une capture d'écran (sur le bureau) sous format gif (jusqu'a 30 secondes)
 - `Alt(Option)+0`<br>
-Toggle the performance monitor (fps, update time, and draw time)
+Moniteur de performance (fps, update time, and draw time)
 - `Alt(Option)+Enter`<br>
-Toggle full screen
+Activez/désactivez le plein écran
 
-### How to Create a Resource
+### Créer un fichier 'resource'
 
-The attached Pyxel Editor can create images and sounds used in a Pyxel application.
+L'éditeur Pyxel permet de créer des images et des sons pouvant être utilisés dans un programme Pyxel.
 
-Pyxel Editor starts with the following command:
+Cet éditeur est accessible via la ligne de commande ci-dessous:
 
 ```sh
-pyxeleditor [pyxel_resource_file]
+pyxeleditor [fichier_ressource_Pyxel]
 ```
 
-If the specified Pyxel resource file (.pyxres) exists, the file is loaded, and if it does not exist, a new file is created with the specified name.
-If the resource file is omitted, the name is `my_resource.pyxres`.
+Si le fichier ressource spécifié existe, il est chargé dans l'éditeur. Dans le cas contraire un fichier est créé avec le nom spécifié dans la ligne de commande.
+Si aucun fichier n'est spécifié dans la ligne de commande, lorsque vous sauvegardez votre travail dans l'éditeur, un fichier nommé `my_resource.pyxres` sera créé automatiquement.  
+
 
 After starting Pyxel Editor, the file can be switched by dragging and dropping another resource file. If the resource file is dragged and dropped while holding down ``Ctrl``(``Cmd``) key, only the resource type (image/tilemap/sound/music) that is currently being edited will be loaded. This operation enables to combine multiple resource file into one.
 
