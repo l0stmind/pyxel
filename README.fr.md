@@ -249,12 +249,12 @@ pyxeleditor [fichier_ressource_Pyxel]
 Si le fichier ressource spécifié existe, il est chargé dans l'éditeur. Dans le cas contraire un fichier est créé avec le nom spécifié dans la ligne de commande.
 Si aucun fichier n'est spécifié dans la ligne de commande, lorsque vous sauvegardez votre travail dans l'éditeur, un fichier nommé `my_resource.pyxres` sera créé automatiquement.  
 
+Vous pouvez également charger un autre fichier `*.pyxres`, en faisant un glisser/déposer dans l'éditeur Pyxel.
+Si le fichier est glissé/déposé en maintenant ``Ctrl``(``Cmd``), seul le type de ressource en cours d'édition (image/tilemap/sound/music) est chargé dans l'éditeur. Cela permet de combiner plusieurs fichier `*.pyxres` entre eux.
 
-After starting Pyxel Editor, the file can be switched by dragging and dropping another resource file. If the resource file is dragged and dropped while holding down ``Ctrl``(``Cmd``) key, only the resource type (image/tilemap/sound/music) that is currently being edited will be loaded. This operation enables to combine multiple resource file into one.
+Le fichier `*.pyxres` peut être chargé dans un programme à l'aide de la fonction `load`.
 
-The created resource file can be loaded with the `load` function.
-
-Pyxel Editor has the following edit modes.
+Voici les différents mode d'edition.  
 
 **Image Editor:**
 
