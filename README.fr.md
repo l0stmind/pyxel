@@ -254,7 +254,7 @@ Si le fichier est glissé/déposé en maintenant ``Ctrl``(``Cmd``), seul le type
 
 Le fichier `*.pyxres` peut être chargé dans un programme à l'aide de la fonction `load`.
 
-Voici les différents mode d'edition.  
+### Les modes de l'éditeur  
 
 **Image Editor:**
 
